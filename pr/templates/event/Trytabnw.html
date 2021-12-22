@@ -1,0 +1,28 @@
+{% extends 'event/base.html' %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+<center>
+<h1> Add data to database </h1>
+    {% if submitted %}
+
+    Data is submitted successfully.........
+
+    {% else %}
+<form action="" method=POST>
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <input type="submit" value="submit" class="btn btn-secondary">
+
+</form>
+
+   {% endif %}
+    </center>
+{% else %}
+<h1 style="color:purple">Sorry... You must login to add detail of book </h1>
+<a href="{% url 'login' %}">Login</a>
+{% endif %}
+
+{% endblock %}

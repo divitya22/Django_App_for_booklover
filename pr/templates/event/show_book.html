@@ -1,0 +1,25 @@
+{% extends 'event/base.html' %}
+
+{% block content %}
+
+<div class="card">
+    <div class="card-header">
+        Books
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{ book }}</h5>
+        <p class="card-text">
+            <ul>
+
+          <li>{{ book.book_name }}</li>
+           <li>{{ book.Type_book }}</li>
+
+    </ul>
+
+        </p>
+
+    </div>
+</div>
+
+
+{% endblock %}

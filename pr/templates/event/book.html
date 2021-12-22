@@ -1,0 +1,30 @@
+{% extends 'event/base.html' %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+
+<table class="table table-striped  table-hover table-bordered  ">
+{% for book in book_list %}
+    <tr><td>
+<a href="{% url 'show-book' book.id %}" style="color:purple">
+    {{ book }}<br/>
+    </td>
+        <td>
+            <a href="{% url 'delete-book' book.id %}"
+           class="btn btn-outline-danger btn-sm">Delete Book</a>
+        </td>
+    </tr>
+    </a>
+
+
+{% endfor %}
+
+    {% else%}
+    <h1 style="color:purple"> Please  Login</h1>
+    <a href="{% url 'login' %">Login</a>
+    {% endif %}
+
+
+
+{% endblock %}
