@@ -10,3 +10,6 @@ User can also download a text file which contains the list of books added.
 
 
 ![List_of_books](https://user-images.githubusercontent.com/83720788/151767721-c858dc1f-b957-4a36-85d5-1fac3b46ff3f.png)
+
+
+![Delete_books](https://user-images.githubusercontent.com/83720788/151767864-e9a6e3c7-a1cb-4b24-b6d9-fcdc0d026bab.png)
